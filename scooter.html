@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="galeriaMotos.css" />
+    <link rel="stylesheet" href="css/galeriaMotos.css" />
     <link
       rel="shortcut icon"
       href="https://cdn-icons-png.flaticon.com/512/619/619109.png"
@@ -27,10 +27,13 @@
       <table>
         <tr>
           <td>
-            <img
-              src="https://www.incolmotos-yamaha.com.co/wp-content/uploads/2018/03/verde.png"
-              alt="CRYPTON FI"
-            />
+            <a href="producto.html" onclick="product()">
+              <img
+                src="https://www.incolmotos-yamaha.com.co/wp-content/uploads/2018/03/verde.png"
+                alt="CRYPTON FI"
+                id="CRYPTON_FI"
+            /></a>
+
             <p><span>Nombre:</span> CRYPTON FI</p>
             <p>$ 6.500.000</p>
             <ul>
@@ -40,10 +43,12 @@
               <li>Transmisión constante de 4 velocidades.</li>
             </ul>
           </td>
+
           <td>
             <img
               src="https://www.incolmotos-yamaha.com.co/wp-content/uploads/2019/09/xmax3.jpg"
               alt="Xmax 300"
+              id="Xmax_300"
             />
             <p><span>Nombre:</span> Xmax 300</p>
             <p>$ 25.500.000</p>
@@ -57,6 +62,7 @@
             <img
               src="https://www.incolmotos-yamaha.com.co/wp-content/uploads/2018/03/nmax-colores-20202-azul.jpg"
               alt="NMAX 155"
+              id="NMAX_155"
             />
             <p><span>Nombre:</span> NMAX 155</p>
             <p>$ 11.500.000</p>
@@ -72,6 +78,7 @@
             <img
               src="https://www.incolmotos-yamaha.com.co/wp-content/uploads/2018/03/sz_gris_verde-1.jpg"
               alt="SZRR 150"
+              id="SZRR_150"
             />
             <p><span>Nombre:</span> SZRR 150</p>
             <p>$9.090.000</p>
@@ -85,6 +92,7 @@
             <img
               src="https://www.incolmotos-yamaha.com.co/wp-content/uploads/2021/03/azul.png"
               alt="YBRZ 125"
+              id="YBRZ_125"
             />
             <p><span>Nombre:</span> YBRZ 125</p>
             <p>$ 7.000.000</p>
@@ -98,6 +106,7 @@
             <img
               src="https://www.incolmotos-yamaha.com.co/wp-content/uploads/2018/03/fz-azul.jpg"
               alt="FZ VERSIÓN 2 150"
+              id="FZ_VERSION_2_150"
             />
             <p><span>Nombre:</span> FZ VERSIÓN 2 150</p>
             <p>$ 8.800.000</p>
@@ -113,6 +122,7 @@
             <img
               src="https://www.incolmotos-yamaha.com.co/wp-content/uploads/2019/08/fz25_negra.jpg"
               alt="FZ25 250"
+              id="FZ25_250"
             />
             <p><span>Nombre:</span> FZ25 250</p>
             <p>$ 12.500.000</p>
@@ -126,6 +136,8 @@
             <img
               src="https://www.incolmotos-yamaha.com.co/wp-content/uploads/2018/08/negro-rojo.png"
               alt="YCZ 110"
+              id="YCZ_110"
+              
             />
             <p><span>Nombre:</span> YCZ 110</p>
             <p>$ 5.300.000</p>
@@ -139,6 +151,7 @@
             <img
               src="https://www.incolmotos-yamaha.com.co/wp-content/uploads/2018/03/fz-gris.jpg"
               alt="FZ VERSIÓN 2.0"
+              id="FZ_VERSION_2"
             />
             <p><span>Nombre:</span> FZ VERSIÓN 2.0</p>
             <p>$ 8.800.000</p>
@@ -185,5 +198,6 @@
         </div>
       </div>
     </div>
+    <script src="logic.js"></script>
   </body>
 </html>
