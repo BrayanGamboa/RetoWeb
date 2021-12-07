@@ -10,7 +10,7 @@ body {
 header {
   background-color: #f79696;
   width: auto;
-  height: 4%;
+  height: 10%;
   display: flex;
   border-radius: 20px;
   margin-left: 3%;
@@ -50,26 +50,6 @@ header {
   margin-top: 1%;
   color: #ffffff;
   font-size: 20px;
-}
-table{
-margin-top: 3%;
-}
-table td{
-    border:2px solid #28303a;
-}
-table img {
-  display: flex;
-  position: static;
-  margin: auto;
-  height: auto;
-  width: 80%;
-}
-ul{
-  text-align: left;
-}
-span{
-  font-weight: bold;
-  font-size: 120%;
 }
 .footer {
   display: flex;

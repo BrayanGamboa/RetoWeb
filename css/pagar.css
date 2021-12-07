@@ -20,17 +20,24 @@ header {
   font-size: 40px;
   position: static;
   margin: auto;
-  margin-left: 43%;
   color: #3e4b5a;
+}
+#inicio{
+  margin-top: 2%;
+  margin-bottom: 1%;
+  width: 20%;
+  height: 80%;
+  display: flex;
+  position: static;
+  margin-left: 9%;
 }
 #imgHeader {
   width: 22%;
   height: auto;
   align-items: baseline;
   float: right;
-  
   margin-right: 10%;
-  position: static;
+  position: static; 
 }
 #alerta {
   background-color: #f50103;
