@@ -20,16 +20,8 @@ header {
   font-size: 40px;
   position: static;
   margin: auto;
+  margin-left: 43%;
   color: #3e4b5a;
-}
-#inicio {
-  margin-top: 2%;
-  margin-bottom: 1%;
-  width: 20%;
-  height: 80%;
-  display: flex;
-  position: static;
-  margin-left: 9%;
 }
 #imgHeader {
   width: 22%;
@@ -51,19 +43,25 @@ header {
   color: #ffffff;
   font-size: 20px;
 }
-.producto {
+table{
+margin-top: 3%;
+}
+table td{
+    border:2px solid #28303a;
+}
+table img {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  position: static;
+  margin: auto;
+  height: auto;
+  width: 80%;
 }
-span {
-  font: size 16px;
+ul{
+  text-align: left;
 }
-.divisiones_producto {
-  margin-top: 5%;
-  margin-left: auto;
-  margin-right: auto;
-  border-left: 2px solid #28303a;
+span{
+  font-weight: bold;
+  font-size: 120%;
 }
 .footer {
   display: flex;
@@ -84,52 +82,4 @@ iframe {
 }
 #contactenos {
   border-left: none;
-}
-#imgProducto {
-  width: 150%;
-}
-#descripcion {
-  font-size: 20px;
-  display: flex;
-}
-#descripcionProductoImg img {
-  position: static;
-  width: 150%;
-  height: auto;
-}
-#descripcionProductoImg {
-  margin-top: 3%;
-}
-#descripcionProductoDatos {
-  margin: auto;
-  font-size: 16px;
-  margin-left: 30px;
-}
-.descripcionProducto {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-#cantidad {
-  font-family: "Varela Round", sans-serif;
-  margin-top: 5%;
-  height: auto;
-  text-align: center;
-  font-size: 20px;
-  color: #28303a;
-  border-radius: 15px;
-  border: none;
-  margin-left: 5%;
-  padding: 0.5%;
-}
-#compra {
-  font-family: "Varela Round", sans-serif;
-  margin-top: 5%;
-  height: auto;
-  padding: 1%;
-  font-size: 27px;
-  background-color: #ff4e4e;
-  color: #28303a;
-  border-radius: 15px;
-  border: none;
-  margin-left: 5%;
 }

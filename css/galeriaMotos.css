@@ -91,3 +91,14 @@ iframe {
 #contactenos {
   border-left: none;
 }
+#verMas{
+  font-family: "Varela Round", sans-serif;
+  background-color: #44DDE3;
+  border: none;
+  font-size: 16px;
+  padding: 1%;
+  color: #3e4b5a;
+  font-weight:500;
+  margin-bottom: 3%;
+  border-radius: 8px;
+}

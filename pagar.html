@@ -11,6 +11,7 @@
       type="image/x-icon"
     />
     <title>Urbanas</title>
+    <script src="logic.js"></script>
   </head>
 
   <body>
@@ -54,7 +55,7 @@
           placeholder="Fecha de Vencimiento"
         />
         <input type="number" name="CVV" id="CVV" placeholder="CVV" />
-        <input type="button" value="Pagar" id="pagar" />
+        <input type="button" value="Pagar" id="pagar" onclick="pago()"/>
         <input type="reset" value="Borrar" id="borrar" />
       </form>
 
