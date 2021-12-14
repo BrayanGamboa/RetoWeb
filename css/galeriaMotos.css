@@ -93,12 +93,15 @@ iframe {
 }
 #verMas{
   font-family: "Varela Round", sans-serif;
-  background-color: #44DDE3;
-  border: none;
-  font-size: 16px;
-  padding: 1%;
-  color: #3e4b5a;
-  font-weight:500;
-  margin-bottom: 3%;
-  border-radius: 8px;
+    margin-top: 5%;
+    width: 35%;
+    height: auto;
+    padding: 1%;
+    font-size: 27px;
+    background-color: #ff4e4e;
+    color: #28303a;
+    border-radius: 15px;
+    border: none;
+    margin-left: 5%;
+    margin-bottom: 2%;
 }

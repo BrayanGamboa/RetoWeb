@@ -11,42 +11,57 @@
       type="image/x-icon"
     />
     <title>Producto</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/609/609803.png" alt="Inicio" id="inicio"></a>
+        <a href="index.html"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/609/609803.png"
+            alt="Inicio"
+            id="inicio"
+        /></a>
         <h1 id="tituloMenu">Menú</h1>
         <a href="carroCompras.html">
           <img
-            src="https://cdn-icons.flaticon.com/png/512/1768/premium/1768201.png?token=exp=1638799928~hmac=dd5de58df762f7c765c948346a124d9b"
+            src="https://cdn-icons.flaticon.com/png/512/1768/premium/1768201.png?token=exp=1639498125~hmac=83fa66581110b9aea08efb9ba28cd1eb"
             alt="Imagen del logo"
             id="imgHeader"
         /></a>
         <p id="alerta"><span id="cantidad"></span>1</p>
       </header>
-
-      <div class="footer" id="img">
-        <div class="descripcionProducto" id="descripcionProductoImg">
-          <img src="https://www.incolmotos-yamaha.com.co/wp-content/uploads/2019/11/xtz250-2020-blanca.png" alt="">
-          <p>Ya guardé el enlace en una variable, pero no sé cómo ponerlo de manera individual en cada foto </p>
-        </div>
-        <div class="descripcionProducto" id="descripcionProductoDatos">
-          <span id="nombre"></span><br><br>
-          <span id="precio"></span><br><br>
-          <span id="descripcion"></span><br><br>
-          <span id="enlace"></span><br><br>
-        </div>
-      </div>
-      <input type="number" name="cantidad_motos" id="cantidad"><br>
-      <a href="pagar.html"><input type="button" value="Confirmar Compra" id="compra" onclick="obtenerDato()"></a>
+      <table>
+        <tr>
+          <td id="imagenProducto">
+            <img
+              src="https://www.incolmotos-yamaha.com.co/wp-content/uploads/2019/11/xtz250-2020-blanca.png"
+              alt=""
+            />
+            <p id="reseña">Ya guardé el enlace en una variable, pero no sé cómo ponerlo de manera individual en cada foto</p>
+          </td>
+          <td>
+            <div id="datos">
+              <label for="name">Nombre: </label><span id="nombre"></span><br /><br />
+              <label for="precio">Precio: </label><span id="precio"></span><br /><br />
+              <label for="datos">Especificaciones Técnicas: </label><span id="descripcion"></span><br /><br />
+              <label for="imagen">Este es el enlace de la imagen:</label><span id="enlace"></span><br /><br />
+            </div>
+          </td>
+        </tr>
+      </table>
       
+      <button value="agregar" id="agregar" onclick="completado()">Agregar al Carrito</button>
+
       <div class="footer">
         <div class="footer_divisiones" id="contactenos">
           <h1>Contáctenos:</h1>
           <br />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odio vitae sed explicabo nemo tempora eligendi nesciunt, asperiores aspernatur atque reiciendis eius impedit porro. Officiis nam aperiam reiciendis iste tenetur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odio
+            vitae sed explicabo nemo tempora eligendi nesciunt, asperiores
+            aspernatur atque reiciendis eius impedit porro. Officiis nam aperiam
+            reiciendis iste tenetur.
           </p>
         </div>
         <div class="footer_divisiones">

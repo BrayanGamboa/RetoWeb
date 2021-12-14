@@ -157,18 +157,18 @@ function _YCZ_110() {
   console.log("Hola");
 }
 //Tengo un pequeño error a la hora de llmara la función desde la hoja externa, pero si lo hago desde esta hoja la lee completamente y sin problema.
-_XTZ_250()
+_XTZ_125();
 console.log(productMoto);
 precio.textContent = "$ " + productMoto["precio"];
-nombre.textContent = "Nombre: " + productMoto["nombre"];
-enlace.textContent = "Este es el enlace para poder ver la imagen del producto: " + productMoto["url"];
-descripcion.textContent = "" + descript;
+nombre.textContent = productMoto["nombre"];
+enlace.textContent = productMoto["url"];
+descripcion.textContent = descript;
 
 function pago() {
-  alert("El pago fue exitoso")
+  alert("El pago fue exitoso");
 }
 function obtenerDato() {
-let numeroMotos = Number(document.getElementById("cantidad").value);
+  let numeroMotos = Number(document.getElementById("cantidad").value);
   //Me aseguro que el número sea positivo, lo convierto
   if (numeroMotos < 0) {
     numeroMotos = numeroMotos * -1;
@@ -178,4 +178,14 @@ let numeroMotos = Number(document.getElementById("cantidad").value);
   valorAPagar = numeroMotos * productMoto["precio"];
   console.log(valorAPagar);
   cantidad.textContent = numeroMotos;
+}
+
+function completado() {
+  swal("Completado","Se ha agregado el producto","success")
+}
+
+function guardarProducto(){
+  let prueba = verMas.value()
+  console.log(prueba);  
+  verMas.getElementById
 }
