@@ -22,7 +22,7 @@ header {
   margin: auto;
   color: #3e4b5a;
 }
-#inicio{
+#inicio {
   margin-top: 2%;
   margin-bottom: 1%;
   width: 20%;
@@ -37,7 +37,7 @@ header {
   align-items: baseline;
   float: right;
   margin-right: 10%;
-  position: static; 
+  position: static;
 }
 #alerta {
   background-color: #f50103;
@@ -56,7 +56,7 @@ header {
   margin-left: 35%;
   margin-right: 35%;
 }
-#CVV{
+#CVV {
   height: auto;
   width: 35%;
   font-size: 23px;
@@ -67,7 +67,6 @@ header {
   margin-right: none;
   margin-left: auto;
   border: none;
-  
 }
 #fechaVencimiento {
   height: auto;
@@ -92,30 +91,30 @@ header {
   padding: 1.5%;
   border: none;
 }
-#pagar{
-    font-family: "Varela Round", sans-serif;
-    margin-top: 5%;
-    width: 35%;
-    height: auto;
-    padding: 1%;
-    font-size: 27px;
-    background-color: #62A8FF;
-    color: #28303a;
-    border-radius: 15px;
-    border: none;
+#pagar {
+  font-family: "Varela Round", sans-serif;
+  margin-top: 5%;
+  width: 35%;
+  height: auto;
+  padding: 1%;
+  font-size: 27px;
+  background-color: #62a8ff;
+  color: #28303a;
+  border-radius: 15px;
+  border: none;
 }
-#borrar{
-    font-family: "Varela Round", sans-serif;
-    margin-top: 5%;
-    width: 35%;
-    height: auto;
-    padding: 1%;
-    font-size: 27px;
-    background-color: #ff4e4e;
-    color: #28303a;
-    border-radius: 15px;
-    border: none;
-    margin-left: 5%;
+#borrar {
+  font-family: "Varela Round", sans-serif;
+  margin-top: 5%;
+  width: 35%;
+  height: auto;
+  padding: 1%;
+  font-size: 27px;
+  background-color: #ff4e4e;
+  color: #28303a;
+  border-radius: 15px;
+  border: none;
+  margin-left: 5%;
 }
 .footer {
   display: flex;
@@ -136,5 +135,4 @@ iframe {
 }
 #contactenos {
   border-left: none;
-  
 }

@@ -11,27 +11,23 @@
       type="image/x-icon"
     />
     <title>Carro de Compras</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
 
   <body>
     <div class="wrapper">
       <header>
-        <a href="index.html"
-          ><img
-            src="https://cdn-icons-png.flaticon.com/512/609/609803.png"
-            alt="Inicio"
-            id="inicio"
-        /></a>
+        <a href=""><img src="https://cdn-icons-png.flaticon.com/512/609/609803.png" alt="Inicio" id="inicio"></a>
         <h1 id="tituloMenu">Menú</h1>
         <a href="carroCompras.html">
-          <img
-            src='https://cdn-icons.flaticon.com/png/512/1768/premium/1768201.png?token=exp=1639498125~hmac=83fa66581110b9aea08efb9ba28cd1eb'
-            alt="Imagen del logo"
-            id="imgHeader"
-        /></a>
-        <p id="alerta"></p>
+            <img
+              src="https://cdn-icons.flaticon.com/png/512/4539/premium/4539794.png?token=exp=1639541187~hmac=3ab9d3285746949220e6d8b586143e73"
+              alt="Imagen del logo"
+              id="imgHeader"
+            /></a>
+        <p id="alerta">1</p>
       </header>
-
+      <h1 id="titulo">Productos Pendientes:</h1>
       <table>
         <tr>
           <td><h1>Imagen:</h1></td>
@@ -43,33 +39,36 @@
           </td>
         </tr>
         <tr>
-          <td><span id="enlace"></span></td>
+          <td>
+            <img
+              src="https://www.incolmotos-yamaha.com.co/wp-content/uploads/2019/11/xtz250-2020-blanca.png"
+              alt="Imgen de la moto"
+              class="miniatura"
+            />
+          </td>
           <td><span id="nombre"></span></td>
           <td><span id="precio"></span></td>
           <td>
             <input type="number" name="cantidad_motos" id="cantidad" /><br />
           </td>
-          <td></td>
+          <td><span id="valorProducto"></span></td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td class="transparent"></td>
+          <td class="transparent"></td>
+          <td class="transparent"></td>
           <td>
-            <input type="number" name="cantidad_motos" id="cantidad" /><br />
+            <label>Cantidad Total:</label><br>
+            <span id="cantidadTotal"></span>
           </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
           <td>
-            <input type="number" name="cantidad_motos" id="cantidad" /><br />
+            
+            <label>Valor Total:</label><br>
+            <span id="valorTotal"></span>
           </td>
-          <td></td>
         </tr>
       </table>
+      <input type="button" value="Calcular" id="calcularValores" onclick="calcularPrecio()"/>
       <a href="pagar.html"
         ><input
           type="button"
@@ -77,6 +76,7 @@
           id="compra"
           onclick="obtenerDato()"
       /></a>
+
       <div class="footer">
         <div class="footer_divisiones" id="contactenos">
           <h1>Contáctenos:</h1>
