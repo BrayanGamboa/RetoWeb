@@ -55,7 +55,8 @@ table{
 margin-top: 3%;
 }
 table td{
-    border:2px solid #28303a;
+  border: 2px solid #28303a;
+  border-radius: 15px;
 }
 table img {
   display: flex;
@@ -63,6 +64,8 @@ table img {
   margin: auto;
   height: auto;
   width: 80%;
+  border-radius: 15px;
+  margin-top: 3%;
 }
 ul{
   text-align: left;

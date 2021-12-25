@@ -92,7 +92,7 @@ table {
   width: 80%;
 }
 table td {
-  border: 2px solid #28303a;
+  border: 3px solid #28303a;
   border-radius: 15px;
 }
 #compra {
@@ -108,11 +108,12 @@ table td {
   margin-left: 5%;
   width: 22%;
 }
-.miniatura{
+#moto{
   height: 150px;
   width: auto;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 15px;
+  margin: 2%;
+
 }
 label{
   font-size: 25px;

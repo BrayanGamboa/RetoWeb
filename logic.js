@@ -94,108 +94,192 @@ let TTR_110 = {
   precio: Number(11500000),
   url: "https://www.incolmotos-yamaha.com.co/wp-content/uploads/2018/03/ttr110E.jpg",
 };
-
+let errorMoto = {
+  nombre: "Tenemos un pequeño error",
+  precio: "x_x",
+  url: "https://images.mediotiempo.com/qK6Fc8a_K4qqj2Jcscxd2YTRdd0=/0x530/uploads/media/2017/02/27/la-la-land-no-se-8.jpg",
+}
 //Creo una function para llamar u obtener los valosres de cada moto
 function _TTR_110() {
   productMoto = TTR_110;
-  console.log(productMoto);
+  localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 function _YZ_85LW() {
-  productMoto = YZ_85LW;
+  productMoto = YZ_85LW
+  localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 function _XTZ_250() {
   productMoto = XTZ_250;
+  localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 function _YZ_450F() {
-  productMoto = JSON.stringify(YZ_450F);
-  console.log("HOLA");
+  productMoto = YZ_450F;
+  localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 function _YZ_250F() {
-  productMoto = YZ_250F;
+  productMoto = YZ_250F
+  localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 function _YZ_250_2T() {
   productMoto = YZ_250_2T;
+  localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 function _WR_250F() {
   productMoto = WR_250F;
+  localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 function _XTZ_150() {
   productMoto = XTZ_150;
+  localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 function _XTZ_125() {
   productMoto = XTZ_125;
+  localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 
 //Urbanas
 
 function _CRYPTON_FI() {
   productMoto = CRYPTON_FI;
+  localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 function _Xmax_300() {
   productMoto = Xmax_300;
+  localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 function _NMAX_155() {
   productMoto = NMAX_155;
+  localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 function _SZRR_150() {
   productMoto = SZRR_150;
+  localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 function _YBRZ_125() {
   productMoto = YBRZ_125;
+  localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 function _FZ_VERSION_2_150() {
-  productMoto = FZ_VERSION_2_150;
+  productMoto= FZ_VERSION_2_150;
+  localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 function _FZ25_250() {
   productMoto = FZ25_250;
+  localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 function _FZ_VERSION_2() {
   productMoto = FZ_VERSION_2;
+  localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 function _YCZ_110() {
   productMoto = YCZ_110;
-  console.log("Hola");
+  localStorage.setItem("moto", JSON.stringify(productMoto));
 }
-//Tengo un pequeño error a la hora de llmara la función desde la hoja externa, pero si lo hago desde esta hoja la lee completamente y sin problema.
-_XTZ_250();
-console.log(productMoto);
-precio.textContent = "$ " + productMoto["precio"];
-nombre.textContent = productMoto["nombre"];
-enlace.textContent = productMoto["url"];
+
+let tomarValor = JSON.parse(localStorage.getItem("moto"))
+
+let nombreMoto = tomarValor["nombre"];
+switch (nombreMoto) {
+  case "CRYPTON FI":
+    productMoto = CRYPTON_FI;
+    break;
+  case "Xmax 300":
+    productMoto = Xmax_300;
+    break;
+  case "NMAX 155":
+    productMoto = NMAX_155;
+    break;
+  case "SZRR 150":
+    productMoto = SZRR_150;
+    break;
+  case "YBRZ 125":
+    productMoto = YBRZ_125;
+    break;
+  case "FZ25 250":
+    productMoto = FZ25_250;
+    break;
+  case "FZ VERSIÓN 2 150":
+    productMoto = FZ_VERSION_2_150;
+    break;
+  case "FZ VERSIÓN 2.0":
+    productMoto = FZ_VERSION_2;
+    break;
+  case "YCZ 110":
+    productMoto = YCZ_110;
+    break;
+  case "YZ-450F":
+    productMoto = YZ_450F;
+    break;
+  case "YZ-250F":
+    productMoto = YZ_250F;
+    break;
+  case "YZ-250 (2T)":
+    productMoto = YZ_250_2T;
+    break;
+  case "WR-250F":
+    productMoto = WR_250F;
+    break;
+  case "XTZ-150":
+    productMoto = XTZ_150;
+    break;
+  case "XTZ-125":
+    productMoto = XTZ_125;
+    break;
+  case "YZ 85LW":
+    productMoto = YZ_85LW;
+    break;
+  case "XTZ 250":
+    productMoto = XTZ_250;
+    break;
+  case "TTR 110":
+    productMoto = TTR_110;
+    break;
+  default:
+    productMoto = errorMoto;
+    break;
+}
+
+nombreMoto = productMoto["nombre"];
+let precioMoto = productMoto["precio"];
+let urlMoto = productMoto["url"];
+
+precio.textContent = "$ " + precioMoto;
+nombre.textContent = nombreMoto;
+document.getElementById("moto").setAttribute("src", urlMoto);
 descripcion.textContent = descript;
 
 function pago() {
-  swal("Felicitaciones","El pago fue exitoso","success");
+  swal("Felicitaciones", "El pago fue exitoso", "success");
 }
 function obtenerDato() {
   let numeroMotos = Number(document.getElementById("cantidad").value);
-  //Me aseguro que el número sea positivo, lo convierto
-  
-
 }
 
 function completado() {
-  swal("Completado","Se ha agregado el producto","success")
+  swal("Completado", "Se ha agregado el producto", "success");
 }
 
-function guardarProducto(){
-  let prueba = verMas.value()
-  console.log(prueba);  
-  verMas.getElementById
-}
-
-function calcularPrecio(){
-  let cantidadProductos, valorMoto, vlrTotal, vlrProducto
-  cantidadProductos = cantidad.value
-  valorMoto = productMoto["precio"]
+function calcularPrecio() {
+  let cantidadProductos, vlrTotal;
+  cantidadProductos = cantidad.value;
   if (cantidadProductos < 0) {
     cantidadProductos = cantidadProductos * -1;
-    swal("Ingresaste un negativo","Ya hemos hecho la conversión a un número positivo","success");
-  } else if  (cantidadProductos == 0) {
-    swal("Faltan Datos","Falta el número de productos que deseas comprar","error")
+    swal(
+      "Ingresaste un negativo",
+      "Ya hemos hecho la conversión a un número positivo",
+      "success"
+    );
+  } else if (cantidadProductos == 0) {
+    swal(
+      "Faltan Datos",
+      "Falta el número de productos que deseas comprar",
+      "error"
+    );
   }
-  vlrTotal = valorMoto * cantidadProductos;
+  vlrTotal = precioMoto * cantidadProductos;
   valorTotal.textContent = vlrTotal;
   valorProducto.textContent = vlrTotal;
-  cantidadTotal.textContent = cantidadProductos
+  cantidadTotal.textContent = cantidadProductos;
+  String(vlrTotal);
+  console.log(vlrTotal.length);
 }
