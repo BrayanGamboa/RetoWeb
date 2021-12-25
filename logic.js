@@ -160,7 +160,7 @@ function _YBRZ_125() {
   localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 function _FZ_VERSION_2_150() {
-  productMoto= FZ_VERSION_2_150;
+  productMoto = FZ_VERSION_2_150;
   localStorage.setItem("moto", JSON.stringify(productMoto));
 }
 function _FZ25_250() {
