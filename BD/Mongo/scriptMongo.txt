@@ -1,0 +1,245 @@
+use BrayanGamboa_MongoDB
+db.createCollection("opiniones"),
+db.opiniones.insertMany(
+    [
+    {
+        "id": 100,
+        "cantidad_estrellas": 5,
+        "cantidad_like": 12,
+        "comentarios": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.",
+        "correo_electronico": "bsgv2005@gmail.com",
+        "nombre": "Brayan",
+        "apellido": "Gamboa",
+        "fecha_nacimiento": "2005-04-19",
+        "sexo": "M",
+        "fecha_opinion": "2022-01-02"
+    },
+    {
+        "id": 101,
+        "cantidad_estrellas": 2,
+        "cantidad_like": 6,
+        "comentarios": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+        "sexo": "M",
+        "fecha_opinion": "2021-09-017"
+    },
+    {
+        "id": 102,
+        "cantidad_estrellas": 2,
+        "cantidad_like": 9,
+        "correo_electronico": "winniepooh28@gmail.com",
+        "nombre": "Camilo",
+        "apellido": "Usuga",
+        "fecha_nacimiento": "2000-02-28",
+        "comentarios": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut su mamy y su pay.",
+        "fecha_opinion": "2021-11-25"
+    },
+    {
+        "id": 103,
+        "cantidad_estrellas": 4,
+        "cantidad_like": 116,
+        "comentarios": "Lorem sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.",
+        "correo_electronico": "sofiarestrep9o@gmail.com",
+        "nombre": "Sofia",
+        "apellido": "Restrepo",
+        "fecha_nacimiento": "2003-05-04",
+        "sexo": "F",
+        "fecha_opinion": "2021-12-18"
+    },
+    {
+        "id": 104,
+        "cantidad_estrellas": 5,
+        "cantidad_like": 705,
+        "comentarios": "Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.",
+        "fecha_opinion": "2018-08-27"
+    }
+]
+);
+
+db.opiniones.insertOne({
+    "id": 105,
+    "cantidad_estrellas": 6,
+    "cantidad_like": 56,
+    "comentarios": "Lorem sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. nisi ut aliquip ex.",
+    "correo_electronico": "mongoilove@gmail.com",
+    "nombre": "Cristian",
+    "apellido": "López",
+    "fecha_nacimiento": "2001-05-16",
+    "sexo": "M",
+    "fecha_opinion": "2021-06-08"
+});
+
+db.opiniones.insertOne({
+    "id": 106,
+    "cantidad_estrellas": 4,
+    "cantidad_like": 16,
+    "comentarios": "Lorem sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. nisi ut aliquip ex, incididunt ut labore et dolore magna aliqua. nisi ut aliquip.",
+    "fecha_opinion": "2022-01-04"
+});
+
+db.opiniones.insertOne({
+    "id": 107,
+    "cantidad_estrellas": 4,
+    "cantidad_like": 60,
+    "comentarios": "Lorem iusmod tempor incididunt ut labore et dolore magna aliqua. nisi ut aliquip ex.",
+    "correo_electronico": "mimamameama@gmail.com",
+    "nombre": "Paula",
+    "apellido": "Gil",
+    "fecha_nacimiento": "2004-06-26",
+    "sexo": "?",
+    "fecha_opinion": "2021-01-02"
+});
+
+db.opiniones.insertOne({
+    "id": 108,
+    "cantidad_estrellas": 6,
+    "cantidad_like": 56,
+    "comentarios": "Lorem sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. nisi ut aliquip ex.",
+    "fecha_opinion": "2021-06-08"
+});
+
+db.opiniones.insertOne({
+    "id": 109,
+    "cantidad_estrellas": 4,
+    "cantidad_like": 52,
+    "comentarios": "Lorem sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. nisi ut aliquip ex.",
+    "correo_electronico": "mongoilove@gmail.com",
+    "nombre": "Cristina",
+    "apellido": "Blandón",
+    "fecha_nacimiento": "2001-05-16",
+    "sexo": "M",
+    "fecha_opinion": "2021-06-08"
+});
+
+db.opiniones.insertOne({
+    "id": 110,
+    "cantidad_estrellas": 2,
+    "cantidad_like": 20,
+    "comentarios": "Lorem sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. nisi ut aliquip ex. Ut sed do eiusmod tempor incididunt",
+    "fecha_opinion": "2021-06-08",
+    "sexo": "?"
+});
+
+db.opiniones.insertOne({
+    "id": 111,
+    "cantidad_estrellas": 4,
+    "cantidad_like": 52,
+    "comentarios": "Lorem sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. nisi ut aliquip ex.",
+    "correo_electronico": "latiapieda@gmail.com",
+    "nombre": "Piedad",
+    "apellido": "Mosquera",
+    "fecha_nacimiento": "1981-07-26",
+    "sexo": "F",
+    "fecha_opinion": "2021-06-08"
+});
+
+db.opiniones.updateOne({
+    id: 111
+},
+{
+    $set: {
+        "cantidad_like": 506
+    }
+});
+
+
+db.opiniones.updateOne({
+    id: 100
+},
+{
+    $set: {
+        "comentarios": "Hola, esto es una prueba"
+    }
+});
+
+db.opiniones.updateOne({
+    id: 101
+},
+{
+    $set: {
+        "fecha_opinion": "2021-06-08"
+    }
+});
+
+db.opiniones.updateOne({
+    id: 102
+},
+{
+    $set: {
+        "apellido": "Gamboa"
+    }
+});
+db.opiniones.updateOne({
+    id: 103
+},
+{
+    $set: {
+        "fecha_nacimiento":"2010"
+    }
+});
+
+db.opiniones.updateOne({
+    id: 104
+},
+{
+    $set: {
+        "cantidad_like": 1200
+    }
+});
+db.opiniones.updateOne({
+    id: 105
+},
+{
+    $set: {
+        "apellido": "Nodal"
+    }
+});
+
+db.opiniones.updateOne({
+    id: 106
+},
+{
+    $set: {
+        "cantidad_like": 24
+    }
+});
+
+db.opiniones.updateOne({
+    id: 107
+},
+{
+    $set: {
+        "nombre": "María"
+    }
+});
+
+db.opiniones.updateOne({
+    id: 108
+},
+{
+    $set: {
+        "cantidad_estrellas": 2
+    }
+});
+
+db.opiniones.updateOne({
+    id: 109
+},
+{
+    $set: {
+        "sexo": "F"
+    }
+});
+
+db.opiniones.deleteOne({"id": 104});
+db.opiniones.deleteOne({"id":110});
+db.opiniones.deleteOne({"id":111});
+db.opiniones.deleteMany({"id":101},{"id":105});
+db.opiniones.deleteMany({"id":107},{"id":109});
+
+
+
+db.opiniones.find({"sexo":"F"});
+db.opiniones.find({"sexo":"M"});
+db.opiniones.find({"apellido":"Gamboa"});
+db.opiniones.find({"nombre":"Brayan"});
+db.opiniones.find({"apellido":"Blandón"});
