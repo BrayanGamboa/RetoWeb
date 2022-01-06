@@ -1,0 +1,1 @@
+En la empresa “Yamaha” se ve necesario llevar un registro de los compradores, de las motos vendidas y por último de los vendedores. Cada moto debe tener un nombre, fecha de compra y un valor unitario. Por cada venta se debe saber el producto, la sede y el vendedor.
