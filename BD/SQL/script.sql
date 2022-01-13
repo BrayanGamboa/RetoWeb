@@ -715,6 +715,7 @@ FROM
     Cliente
 WHERE
     sexo = "F";
+/*Nota: no entiendo cómo hacer la solución del punto "d", de antemano pido disculpas.*/
 
 /*e) Construya una consulta que evidencie el uso de INNER JOIN.*/
 SELECT
@@ -753,5 +754,3 @@ FROM
     Cargo
 GROUP BY
     valor;
-
-/*Nota: no entiendo cómo hacer la solución del punto "d", de antemano pido disculpas.*/
